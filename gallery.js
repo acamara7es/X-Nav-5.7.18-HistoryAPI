@@ -29,7 +29,7 @@ function setupHistoryClicks() {
 }
 
 window.onload = function() {
-  if (Modernizr.history) { return; }
+  if (!Modernizr.history) { return; }
   setupHistoryClicks();
   window.setTimeout(function() {
     window.addEventListener("popstate", function(e) {
