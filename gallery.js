@@ -1,12 +1,9 @@
-function supports_history_api() {
-  return !!(window.history && history.pushState);
-}
+var host = "http://acamara7es.github.io/X-Nav-5.7.18-HistoryAPI"
 
 function swapPhoto(href) {
   var req = new XMLHttpRequest();
   req.open("GET",
-           "http://gsyc.es/~grex/history_api/gallery/" +
-             href.split("/").pop(),
+           host + "/gallery/" + href.split("/").pop(),
            false);
   req.send(null);
   if (req.status == 200) {
@@ -32,7 +29,7 @@ function setupHistoryClicks() {
 }
 
 window.onload = function() {
-  if (!supports_history_api()) { return; }
+  if (Modernizr.history) { return; }
   setupHistoryClicks();
   window.setTimeout(function() {
     window.addEventListener("popstate", function(e) {
@@ -40,4 +37,3 @@ window.onload = function() {
     }, false);
   }, 1);
 }
-
