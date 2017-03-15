@@ -6,7 +6,7 @@ Basándote en los ficheros que puedes encontrar en el repositorio [CursosWeb/X-N
 
 - Añade las páginas HTML completas en el directorio principal. Puedes copiar y pegar la parte correspondiente de las páginas HTML parciales.
 
-- Modifica `gallery.js` para que utilice la biblioteca de deteccion de funcionalidad Modernizr.
+- Modifica `gallery.js` para que utilice la biblioteca de detección de funcionalidad Modernizr.
 
 - Modifica el repositorio convenientemente para que se sirva como web desde GitHub.
 
