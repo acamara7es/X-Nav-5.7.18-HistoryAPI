@@ -1,4 +1,4 @@
-var host = "http://acamara7es.github.io/X-Nav-5.7.18-HistoryAPI"
+var host = "https://acamara7es.github.io/X-Nav-5.7.18-HistoryAPI"
 
 function swapPhoto(href) {
   var req = new XMLHttpRequest();
